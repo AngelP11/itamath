@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
   	<meta charset="UTF-8">
-  	<title>Itamar - Math</title>
-    <link rel="stylesheet" href="./public/app.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<title>Itamath</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/app.css">
   </head>
   <body>
     <section class="main-container"> 
@@ -13,17 +13,17 @@
           <div class="row">
             <div class="col-md-6">
               <figure class="logo">
-                <h1>Itamar</h1>
+                <a href="/"><img src="logo.png" height="100" width="250" alt="logo"></a>
               </figure>
             </div>
 
             <div class="col-md-6">
               <nav class="menu">
                 <ul>
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#">Guias</a></li>
-                  <li><a href="#">Tips</a></li>
-                  <li><a href="#">Sobre mi</a></li>
+                  <li><a href="/">Inicio</a></li>
+                  <li><a href="/guias">Guias</a></li>
+                  <li><a href="/tips">Tips</a></li>
+                  <li><a href="/sobremi">Sobre mi</a></li>
                 </ul>
               </nav>
             </div>
@@ -31,36 +31,93 @@
         </div>
       </header>
 
-      <section class="inicio">
-        <article class="descripcion">
-          <img src="" alt="Mi foto" class="foto">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, harum blanditiis voluptas! Est repellendus praesentium illo tempore quidem architecto, voluptatibus at quasi, facilis adipisci excepturi tempora magnam, officiis eos, doloremque.</p>
-        </article>
+        <section id="slideshow">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
 
-        <article class="contenido">
-          <div class="tips">
-            <img src="assets/tips.png" height="128" width="128" alt="tips">
-            <h3>Tips</h3>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="background.jpg" alt="">
+                <div class="carousel-caption">
+                  ...
+                </div>
+              </div>
+              <div class="item">
+                <img src="background-2.jpg" alt="">
+                <div class="carousel-caption">
+                  ...
+                </div>
+              </div>
+              <div class="item">
+                <img src="background-3.jpeg" alt="">
+                <div class="carousel-caption">
+                  ...
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <div class="guias">
-            <img src="assets/guias.png" height="128" width="128" alt="guias">
-            <h3>Guias</h3>
+        </section>
+
+      <section class="inicio">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <article class="descripcion">
+                <img src="" alt="Mi foto" class="foto">
+                <h1>Hola, soy Jose Itamar</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, harum blanditiis voluptas! Est repellendus praesentium illo tempore quidem architecto, voluptatibus at quasi, facilis adipisci excepturi tempora magnam, officiis eos, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maxime soluta autem fuga laboriosam quasi commodi quae perferendis, fugit, explicabo unde doloribus incidunt accusantium, praesentium fugiat! Iure esse perspiciatis nesciunt.</p>
+              </article>
+            </div>
           </div>
-          <div class="reflexiones">
-            <img src="assets/reflexciones.png" height="128" width="128" alt="reflexiones">
-            <h3>Reflexiones</h3>
+          <div class="row">
+            <div class="col-md-12">
+              <article class="contenido">
+                <div class="tips">
+                  <img src="tips.png" height="128" width="128" alt="tips">
+                  <h3>Tips</h3>
+                  <a href="/tips">Ver mas</a>
+                </div>
+                <div class="guias">
+                  <img src="guias.png" height="128" width="128" alt="guias">
+                  <h3>Guias</h3>
+                  <a href="/guias">Ver mas</a>
+                </div>
+                <div class="reflexiones">
+                  <img src="reflexciones.png" height="128" width="128" alt="reflexiones">
+                  <h3>Reflexiones</h3>
+                  <a href="/reflexiones">Ver mas</a>
+                </div>
+              </article>
+            </div>
           </div>
-        </article>
+        </div>
       </section>
     </section>
     <footer>
-      © 2017 Itamar 
+      <a href="mailto:joseitamar@gmail.com"><strong>E-mail: </strong> <span>joseitamar@gmail.com</span></a>
+      <p>© 2017 Itamath</p>
     </footer>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
