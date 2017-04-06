@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Itamath
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='app.css')
+  body
+    header
+      .container
+        .row
+          .col-md-6
+            figure.logo
+              a(href='/')
+                img(src='logo.png', height='100', width='250', alt='logo')
+          .col-md-6
+            nav.menu
+              ul
+                li
+                  a(href='/') Inicio
+                li
+                  a(href='/guias') Guias
+                li
+                  a(href='/tips') Tips
+
+    section#main-container
+
+    footer
+      a(href='mailto:joseitamar@gmail.com')
+        strong E-mail: 
+        span joseitamar@gmail.com
+      p © 2017 Itamath
+    script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+    script(src='app.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')

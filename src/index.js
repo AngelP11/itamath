@@ -1,5 +1,9 @@
 var page = require('page')
 
-page('/', function (ctx, next) {
-	
-})
+require('./home')
+require('./tips')
+require('./guias')
+require('./articulos/datos-curiosos-1')
+require('./articulos/numero-phi')
+
+page.start()

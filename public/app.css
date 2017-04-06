@@ -6725,22 +6725,22 @@ header {
   background-color: #2c3e50;
 }
 .menu ul {
-  margin-left: 100px;
+  margin-left: 220px;
 }
 .menu li {
   display: inline-block;
-  margin-top: 40px;
-  margin-left: 30px;
-  font-size: 15px;
+  margin-top: 35px;
+  margin-left: 35px;
 }
 .menu a {
-  font-size: 22px;
+  font-size: 25px;
   text-decoration: none;
   color: white;
   padding-bottom: 10px;
 }
 .menu a:hover {
   border-bottom: 3px solid white;
+  cursor: pointer;
 }
 #slideshow {
   width: 100%;
@@ -6761,12 +6761,64 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 100px;
 }
 .contenido img {
   margin: 100px 100px 0px 100px;
 }
+.caja {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.caja article {
+  margin: 0 20px;
+}
+.container .title {
+  text-align: center;
+  font-size: 42px;
+  margin: 50px 0;
+}
+.guia {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 220px;
+  margin: 20px 0;
+}
+.guia img {
+  float: left;
+  margin-right: 20px;
+}
+.guia h3,
+p,
+a {
+  margin: 12px 0;
+}
+.guia h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.img-article {
+  width: 100%;
+  height: 500px;
+}
+.title-article {
+  text-align: left;
+  margin: 20px 0 5px 0;
+  font-size: 45px;
+}
+.contenido-article {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.contenido-article li {
+  margin-bottom: 20px;
+}
+.contenido-article ol {
+  margin-top: 30px;
+}
 footer {
-  margin-top: 100px;
   height: 100px;
   background-color: #2c3e50;
   color: white;

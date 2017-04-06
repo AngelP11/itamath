@@ -9,7 +9,14 @@ app.get('/', function (req, res) {
 })
 
 app.get('/tips', function (req, res) {
-  res.send('Hola men :D')
+  res.render('index')
+})
+
+app.get('/datos-curiosos-1', function (req, res) {
+  res.render('index')
+})
+app.get('/numero-phi', function (req, res) {
+  res.render('index')
 })
 
 app.get('/guias', function (req, res) {
