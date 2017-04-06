@@ -27,7 +27,7 @@ app.get('/reflexiones', function (req, res) {
   res.render('index')
 })
 
-app.listen(3000, function (err) {
+app.listen(80, function (err) {
   if (err) {
     console.log(err)
   }
