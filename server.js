@@ -4,26 +4,26 @@ var app = express()
 app.set('view engine', 'pug') //Utilizamos Pug como templete para las vistas
 app.use(express.static(__dirname + '/public'))
 
-app.get('/', function (req, res) {
+app.get('https://angelp11.github.io/itamath/', function (req, res) {
   res.render('index')
 })
 
-app.get('/tips', function (req, res) {
+app.get('https://angelp11.github.io/itamath/tips', function (req, res) {
   res.render('index')
 })
 
-app.get('/datos-curiosos-1', function (req, res) {
+app.get('https://angelp11.github.io/itamath/datos-curiosos-1', function (req, res) {
   res.render('index')
 })
-app.get('/numero-phi', function (req, res) {
-  res.render('index')
-})
-
-app.get('/guias', function (req, res) {
+app.get('https://angelp11.github.io/itamath/numero-phi', function (req, res) {
   res.render('index')
 })
 
-app.get('/reflexiones', function (req, res) {
+app.get('https://angelp11.github.io/itamath/guias', function (req, res) {
+  res.render('index')
+})
+
+app.get('https://angelp11.github.io/itamath/reflexiones', function (req, res) {
   res.render('index')
 })
 
